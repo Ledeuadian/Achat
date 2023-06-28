@@ -1,6 +1,6 @@
-'use client'
+"use client"
 
-import clsx from 'clsx';
+import clsx from "clsx";
 import Link from "next/link";
 
 interface DesktopItemProps {
@@ -45,7 +45,7 @@ const DesktopItem: React.FC<DesktopItemProps> = ({
                 )}
             >
                 <Icon className = "h-6 w-6 shrink-0"/>
-                <span className='sr-only text-blue-700'>'{label}'</span>
+                <span className='sr-only text-blue-700'>{label}</span>
             </Link>
         </li>   
     );
