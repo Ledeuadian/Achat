@@ -1,3 +1,5 @@
+'use client'
+
 import ToasterContext from './context/ToasterContext'
 import AuthContext from './context/AuthContext'
 import './globals.css'
@@ -7,11 +9,6 @@ import { ThemeProvider } from 'next-themes'
 
 
 const inter = Inter({ subsets: ['latin'] })
-
-export const metadata = {
-  title: 'Chat App',
-  description: 'Messenger Clone App',
-}
 
 export default function RootLayout({
   children,
