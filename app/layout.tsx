@@ -1,14 +1,17 @@
-'use client'
-
 import ToasterContext from './context/ToasterContext'
 import AuthContext from './context/AuthContext'
 import './globals.css'
 import { Inter } from 'next/font/google'
-import ActiveStatus from './components/ActiveStatus'
-import { ThemeProvider } from 'next-themes'
+import ActiveStatus from './components/ActiveStatus';
+import ThemeProvider from "@/app/components/ThemeProvider";
 
 
 const inter = Inter({ subsets: ['latin'] })
+
+export const metadata = {
+  title: "aChat",
+  description: 'Chat and have fun'
+}
 
 export default function RootLayout({
   children,
@@ -18,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <ThemeProvider attribute="class">
+      <ThemeProvider>
         <AuthContext>
         <ToasterContext/>
         <ActiveStatus/>
