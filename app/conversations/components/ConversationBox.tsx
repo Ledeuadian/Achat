@@ -83,7 +83,7 @@ const lastMessageText = useMemo(() => {
             dark:hover:bg-neutral-500
             my-1
         `,
-            selected ? 'bg-neutral-100 dark:bg-neutral-300' : 'bg-white'
+            selected ? 'bg-neutral-100 dark:bg-neutral-500' : 'bg-white dark:bg-neutral-800'
         )}
     >   
         {data.isGroup ? ( <AvatarGroup users={data.users} />
